@@ -39,6 +39,10 @@ module.exports = class extends Generator {
   }
 
   writing () {
+    // public folder
+    mkdirp(this.destinationPath('public/dist'))
+    mkdirp(this.destinationPath('public/packages'))
+
     // copy normal files/folders
     this.fs.copyTpl(
       this.templatePath(),
