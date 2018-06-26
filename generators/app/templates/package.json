@@ -1,0 +1,44 @@
+{
+  "name": "forms-cms",
+  "private": true,
+  "scripts": {
+    "serve": "./node_modules/.bin/webpack-dev-server --content-base public/ --inline --hot"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "firebase": "^4.5.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.22.1",
+    "picasso.css": "^1.0.28",
+    "uuid": "^3.1.0",
+    "vee-validate": "^2.0.0-rc.5",
+    "vue": "^2.5.9",
+    "vue-acl": "^2.1.0",
+    "vue-i18n": "^6.1.1",
+    "vue-paginate": "^3.5.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "css-hot-loader": "^1.3.1",
+    "css-loader": "^0.28.0",
+    "editorconfig": "^0.13.2",
+    "eslint": "^4.16.0",
+    "eslint-plugin-html": "^4.0.2",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "standard": "^10.0.3",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "vue-loader": "^13.5.0",
+    "webpack": "^3.7.0",
+    "webpack-dev-server": "^2.9.5"
+  }
+}

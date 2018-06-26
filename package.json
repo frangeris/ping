@@ -1,44 +1,49 @@
 {
-  "name": "forms-cms",
-  "private": true,
-  "scripts": {
-    "serve": "./node_modules/.bin/webpack-dev-server --content-base public/ --inline --hot"
+  "name": "generator-ping",
+  "version": "0.0.1",
+  "description": "Vue.js boilerplate supporting vuex, webpack, routing, less, i18n out-of-the-box.",
+  "license": "MIT",
+  "author": {
+    "name": "Frangeris Peguero",
+    "email": "frangeris.20@gmail.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "ping",
+    "vue",
+    "spa"
+  ],
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "eslint": "^3.19.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^20.0.4",
+    "standard": "^10.0.3",
+    "yeoman-assert": "3.0.0",
+    "yeoman-generator": "2.0.1",
+    "yeoman-test": "1.6.0"
   },
   "dependencies": {
-    "axios": "^0.17.1",
-    "firebase": "^4.5.1",
+    "yeoman-generator": "2.0.1",
+    "chalk": "^2.3.0",
+    "glob": "^7.1.2",
+    "js-yaml": "^3.8.4",
     "lodash": "^4.17.4",
-    "moment": "^2.22.1",
-    "picasso.css": "^1.0.28",
-    "uuid": "^3.1.0",
-    "vee-validate": "^2.0.0-rc.5",
-    "vue": "^2.5.9",
-    "vue-acl": "^2.1.0",
-    "vue-i18n": "^6.1.1",
-    "vue-paginate": "^3.5.0",
-    "vue-router": "^3.0.1",
-    "vuex": "^2.3.1",
+    "mkdirp": "^0.5.1",
+    "yosay": "^2.0.0"
   },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^6.4.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "css-hot-loader": "^1.3.1",
-    "css-loader": "^0.28.0",
-    "editorconfig": "^0.13.2",
-    "eslint": "^4.16.0",
-    "eslint-plugin-html": "^4.0.2",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "file-loader": "^0.11.2",
-    "less": "^2.7.2",
-    "less-loader": "^4.0.4",
-    "standard": "^10.0.3",
-    "style-loader": "^0.18.2",
-    "uglifyjs-webpack-plugin": "^0.4.6",
-    "vue-loader": "^13.5.0",
-    "webpack": "^3.7.0",
-    "webpack-dev-server": "^2.9.5"
-  }
+  "scripts": {
+    "pretest": "./node_modules/.bin/standard --fix",
+    "test": "./node_modules/.bin/jest"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "repository": "https://github.com/frangeris/ping"
 }

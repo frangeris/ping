@@ -1,7 +1,5 @@
+node_modules
+coverage
 *.log
-.DS_Store
-.env
-node_modules/
-public/dist/*
-!public/dist/.gitkeep
-public/packages
+.DS*
+package-lock.json
