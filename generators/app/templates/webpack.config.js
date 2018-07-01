@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: ['./src/main.js'],
@@ -60,6 +61,16 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({ 'process.env': require('./.env') }),
     new webpack.NamedModulesPlugin(),
-    new ExtractTextPlugin('build.min.css', { allChunks: true })
+    new ExtractTextPlugin('build.min.css', { allChunks: true }),
+    new CopyWebpackPlugin([
+      {
+        from: './src/assets/images/*.*',
+        to: '[name].[ext]'
+      },
+      {
+        from: './src/assets/fonts/*.*',
+        to: '[name].[ext]'
+      }
+    ])
   ]
 }
