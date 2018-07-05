@@ -1,8 +1,8 @@
 {
-  "name": "forms-cms",
+  "name": "<%= name %>",
   "private": true,
   "scripts": {
-    "serve": "./node_modules/.bin/webpack-dev-server --content-base public/ --inline --hot"
+    "start": "./node_modules/.bin/webpack-dev-server --content-base public/ --inline --hot"
   },
   "dependencies": {
     "axios": "^0.17.1",
